@@ -13,7 +13,5 @@ build_search_index = true
 
 theme = "after-dark"
 
-paginate_by = 5
-
 [extra]
 # Put all your custom variables here

@@ -1,0 +1,28 @@
+[build]
+# This assumes that the Zola site is in a docs folder. If it isn't, you don't need
+# to have a `base` variable but you do need the `publish` and `command` variables.
+base    = "blog"
+publish = "blog/public"
+command = "zola build"
+
+[build.environment]
+# Set the version name that you want to use and Netlify will automatically use it.
+ZOLA_VERSION = "0.12.1"
+
+[[redirects]]
+  from = "https://master--lcm-blog.netlify.com"
+  to = "https://luiz.site:"
+  status = 301
+  force = true
+    
+[[redirects]]
+  from = "https://master-lcm-blog.netlify.com/*"
+  to = "https://luiz.site/:splat"
+  status = 301
+  force = true
+
+[[headers]]
+  # Define which paths this specific [[headers]] block will cover.
+  for = "/*"
+    [headers.values]
+    Access-Control-Allow-Origin = "*"

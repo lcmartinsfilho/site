@@ -27,3 +27,4 @@ after_dark_menu = [
     {url = "$BASE_URL/tags", name = "Tags"},
     {url = "https://google.com", name = "Google"},
 ]
+after_dark_title = "Blog do Luiz"

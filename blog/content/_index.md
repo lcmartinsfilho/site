@@ -37,6 +37,7 @@ aliases = []
 in_search_index = true
 
 paginate_by = 5
+after_dark_title = "Blog do Luiz"
 
 # The taxonomies for that page. The keys need to be the same as the taxonomies
 # name configured in `config.toml` and the values an array of String like
